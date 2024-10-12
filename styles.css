@@ -1,0 +1,197 @@
+:root {
+    --mauve: #edc9ff;
+    --mimi-pink: #fed4e7;
+    --apricot: #f2b79f;
+    --earth-yellow: #e5b769;
+    --citrine: #d8cc34;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, var(--mauve), var(--mimi-pink), var(--apricot), var(--earth-yellow), var(--citrine));
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    min-height: 100vh;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 140%;
+    overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between logo and inputs */
+    align-items: center; /* Center items vertically */
+    height: 50px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo h2 {
+    font-family: monospace;
+}
+
+main {
+    padding-top: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.section h2 {
+    color: black;
+    margin-top: 0;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section p {
+    color: #333;
+}
+
+.section .category {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.section button {
+    background-color: var(--earth-yellow);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section button:hover {
+    background-color: rgb(241, 168, 73);
+}
+
+.section > .link {
+    background-color: #344fc5;
+}
+
+.section > .link:hover {
+    background-color: #5a77f9;
+}
+
+#readme-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.back-button {
+    background-color: var(--mauve);
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--mimi-pink);
+}
+
+.nav-right {
+    display: flex; /* Use flexbox for the right section */
+    align-items: center; /* Center items vertically */
+}
+
+#search-input {
+    padding: 8px; /* Increase padding for larger input */
+    font-size: 1.2em; /* Increase font size */
+    margin-right: 10px; /* Space between input and filter */
+    border-radius: 20px;
+    font-family: monospace;
+}
+
+#category-filter {
+    padding: 8px; /* Increase padding for larger dropdown */
+    font-size: 1.2em; /* Increase font size */
+    font-family: monospace;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+#readme-content {
+    white-space: pre-wrap; /* Allows text to wrap */
+    padding: 20px; /* Add some padding */
+    background-color: #f9f9f9; /* Optional: Background color for better contrast */
+    border: 1px solid #ccc; /* Optional: Border for better visibility */
+    border-radius: 5px; /* Optional: Rounded corners */
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s forwards; /* Apply the fade-in animation */
+}
+
+#readme-content img {
+    max-width: 100%; /* Ensure images do not exceed the width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: floralwhite; 
+  }

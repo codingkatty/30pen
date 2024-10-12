@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30pen</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo" onclick="scrollToTop()">
+            <h2>&nbsp;&nbsp;30pen</h2>
+        </div>
+        <div class="nav-right">
+            <input type="text" id="search-input" placeholder="Search..." oninput="filterResults()">
+            <select id="category-filter" onchange="filterResults()">
+                <option value="">All Categories</option>
+                <option value="Framework">Frameworks</option>
+                <option value="Version Control">Version Control</option>
+                <option value="Education">Education</option>
+                <option value="Software">Software</option>
+                <option value="Development Tools">Development Tools</option>
+            </select>
+        </div>
+    </nav>
+
+    <main>
+        <br><br>
+        <div id="sections-container"></div>
+        <div id="readme-container" style="display: none;">
+            <button onclick="hideReadme()" class="back-button">Back to Repos</button>
+            <div id="readme-content"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
