@@ -1,7 +1,3 @@
-require('dotenv').config();
-
-const token = process.env.TOKEN;
-
 const repoData = [
     // Framework
     {
@@ -212,8 +208,7 @@ async function fetchReadme(owner, repo) {
     try {
         const response = await fetch(apiUrl, {
             headers: {
-                Accept: 'application/vnd.github.v3+json',
-                Authorization: `token ${token}`
+                Accept: 'application/vnd.github.v3+json'
             }
         });
 
