@@ -37,9 +37,9 @@ nav {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space between logo and inputs */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
 }
 
@@ -133,63 +133,60 @@ main {
 }
 
 .nav-right {
-    display: flex; /* Use flexbox for the right section */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    align-items: center;
 }
 
 #search-input {
-    padding: 8px; /* Increase padding for larger input */
-    font-size: 1.2em; /* Increase font size */
-    margin-right: 10px; /* Space between input and filter */
+    padding: 8px;
+    font-size: 1.2em;
+    margin-right: 10px;
     border-radius: 20px;
     font-family: monospace;
 }
 
 #category-filter {
-    padding: 8px; /* Increase padding for larger dropdown */
-    font-size: 1.2em; /* Increase font size */
+    padding: 8px;
+    font-size: 1.2em;
     font-family: monospace;
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Start invisible */
+        opacity: 0;
     }
     to {
-        opacity: 1; /* Fully visible */
+        opacity: 1;
     }
 }
 
 #readme-content {
-    white-space: pre-wrap; /* Allows text to wrap */
-    padding: 20px; /* Add some padding */
-    background-color: #f9f9f9; /* Optional: Background color for better contrast */
-    border: 1px solid #ccc; /* Optional: Border for better visibility */
-    border-radius: 5px; /* Optional: Rounded corners */
-    opacity: 0; /* Start invisible */
-    animation: fadeIn 1s forwards; /* Apply the fade-in animation */
+    white-space: pre-wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
 #readme-content img {
-    max-width: 100%; /* Ensure images do not exceed the width of the container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 15px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: white; 
     border-radius: 10px;
-  }
+}
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
